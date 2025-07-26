@@ -2,6 +2,7 @@
 
 namespace Craue\ConfigBundle\Tests\IntegrationTestBundle\Controller;
 
+use Craue\ConfigBundle\Util\Config;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
@@ -12,9 +13,9 @@ use Symfony\Component\HttpFoundation\JsonResponse;
  */
 class DebugController extends AbstractController {
 
-	public function getAction($name) {
+	public function getAction($name, Config $config) {
 		return new JsonResponse([
-			$name => $this->container->get('craue_config')->get($name),
+			$name => $config->get($name),
 		]);
 	}
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.0.0] – 2025-07-26 (Symfony 7 Support Fork)
+
+- added support for Symfony 7.0+
+- updated SettingsController to use modern dependency injection with #[Autowire] attributes
+- replaced deprecated container parameter access with proper DI
+- updated flash message handling to use AbstractController::addFlash() instead of deprecated SessionInterface::getFlashBag()
+- removed incompatible `craue/translations-tests` dependency for PHP 8.3+ compatibility
+- updated PHPStan configuration to handle legacy Doctrine Cache Bundle compatibility
+
 ## [2.7.0] – 2023-08-07
 
 - dropped support for Symfony 5.3, 6.0, 6.1, 6.2

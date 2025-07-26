@@ -7,7 +7,9 @@ parameters:
 		- Tests/*
 		- vendor/*
 	ignoreErrors:
-		- '#^Call to an undefined method Psr\\Container\\ContainerInterface::getParameter\(\)\.$#'
 		-
 			message: '#^Unsafe usage of new static\(\)\.$#'
 			path: Entity/BaseSetting.php
+		- '#^Property Craue\\ConfigBundle\\CacheAdapter\\DoctrineCacheBundleAdapter::\$cache has unknown class Doctrine\\Common\\Cache\\CacheProvider as its type\.$#'
+		- '#^Parameter \$cache of method Craue\\ConfigBundle\\CacheAdapter\\DoctrineCacheBundleAdapter::__construct\(\) has invalid type Doctrine\\Common\\Cache\\CacheProvider\.$#'
+		- '#^Call to method \w+\(\) on an unknown class Doctrine\\Common\\Cache\\CacheProvider\.$#'

@@ -13,8 +13,8 @@ abstract class BaseSetting implements SettingInterface {
 
 	/**
 	 * @var string
-	 * @Assert\NotBlank
 	 */
+	#[Assert\NotBlank]
 	protected $name;
 
 	/**
