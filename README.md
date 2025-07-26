@@ -1,5 +1,7 @@
 # Information
 
+> **🚀 Symfony 7 Support**: This fork provides full compatibility with Symfony 7.0+ while maintaining backward compatibility with Symfony 5.4 and 6.4. Features modern PHP 8 attributes, dependency injection improvements, and updated validation constraints.
+
 [![Tests](https://github.com/craue/CraueConfigBundle/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/craue/CraueConfigBundle/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/github/craue/CraueConfigBundle/badge.svg?branch=master)](https://coveralls.io/github/craue/CraueConfigBundle?branch=master)
 
@@ -14,7 +16,7 @@ by an admin user.
 Let Composer download and install the bundle by running
 
 ```sh
-composer require craue/config-bundle
+composer require pfpro/craue-config-bundle
 ```
 
 in a shell.
