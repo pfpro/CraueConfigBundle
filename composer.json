@@ -1,5 +1,5 @@
 {
-	"name": "pfpro/craue-config-bundle",
+	"name": "craue/config-bundle",
 	"description": "Database-stored settings made available via a service for your Symfony project. (Fork with Symfony 7 support)",
 	"license": "MIT",
 	"type": "symfony-bundle",
